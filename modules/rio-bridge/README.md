@@ -1,11 +1,10 @@
-## Rio Bridge
+## Rio Bridge Module
+
+version: 1.0 beta
 
 This module is to implement the cross-chain deposit and withdraw. This is the first version to make the  business logic work. The next version will be more decentralized.
 
-Rio Bridge will implemented with a federated module, and we have decideded to not integrate a light node in the chain and 
-该模块主要实现跨链资产的充值与提现，目前还需要与中心化的后台管理钱包配合使用。当中心化的钱包收到对应的充值提现请求后，经过验证将由指定权限的用户发送相关的deposit/withdrwal请求。
-
-对于一次性超过30 BTC的请求，需要列入白名单中才可以正常充值。列入白名单的方式为调用mark_white的接口。如果一个地址提交了一个超过30 BTC的充值请求，但还未通过白名单，则会将其充值标记为pending状态。在将其列入白名单之后，将会自动完成之前的充值请求。
+Rio Bridge will implemented with a federated module, and we have decideded to not integrate a light node in the chain to support the generic cross-chain asset. This requires some trust in the federated nodes but have the benifit for less onchain cost and more generic cross-chain support.
 
 ## storage：
 AssetId : assetid of sbtc
