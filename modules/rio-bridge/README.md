@@ -2,9 +2,9 @@
 
 version: 1.0 beta
 
-This module is to implement the cross-chain deposit and withdraw. This is the first version to make the  business logic work. The next version will be more decentralized.
+This module is to implement the cross-chain deposit and withdraw for RioChain. This is the first version to make the  business logic work. The next version will be more decentralized.
 
-Rio Bridge will implemented with a federated module, and we have decideded to not integrate a light node in the chain to support the generic cross-chain asset. This requires some trust in the federated nodes but have the benifit for less onchain cost and more generic cross-chain support.
+Rio Bridge will implemented with a federated model, and we have decideded to not integrate a light node in the chain to support the generic cross-chain asset. This requires some trust in the federated nodes but have the benifit for less onchain cost and more generic cross-chain support.
 
 ## storage：
 AssetId : assetid of sbtc
